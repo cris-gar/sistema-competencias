@@ -80,9 +80,9 @@ return array(
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => '127.0.0.1',
-			'database' => 'Prueba',
+			'database' => 'competencias',
 			'username' => 'postgres',
-			'password' => 'finisterra',
+			'password' => '1234',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 			'schema'   => 'public',
