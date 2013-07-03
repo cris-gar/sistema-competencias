@@ -1,0 +1,395 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Sistema de categorización de competencia de los funcionarios de la Facultad.
+\end_layout
+
+\begin_layout Date
+09/05/13
+\end_layout
+
+\begin_layout Abstract
+En la Universidad Tecnológica Metropolitana en la actualidad, no cuentacon
+ un sistema activo automatizado de las categorizaciones de competencias,
+ aptitudes, especializaciones, y virtudes de los de los funcionarios de
+ la Facultad.
+ Para suplir esta necesidad, realizaremos un servicio web, en donde usuarios
+ con un perfil determinado por un rol o papel, accederán a información muy
+ particular y no sensible, es decir sólo lectura.
+ Así mismo, existirán otros roles, con distintos permisos especiales como
+ de escritura y lectura, los cuales podrán ver más sensible con respecto
+ de los académicos, actualizarla y realizar inferencias estadísticas respectos
+ a ésta.
+\end_layout
+
+\begin_layout Abstract
+Este servicio será capaz de entregar uan información concisa de quiénes
+ son nuestros académicos y para qué son buenos.
+\end_layout
+
+\begin_layout Section
+Stakeholders
+\end_layout
+
+\begin_layout Itemize
+Director de Departamento de Informatica, Decano, Vicerrector Academico,
+ Rector.
+\end_layout
+
+\begin_layout Itemize
+Secretaria de Departamento.
+\end_layout
+
+\begin_layout Section
+Requirimientos
+\end_layout
+
+\begin_layout Subsection
+Método: 6 w's.
+\end_layout
+
+\begin_layout Itemize
+Qué: Sistema capaz de visualizar, categorizar, filtrar, inferir estadísticas,
+ modificar datos internamente por los encargados respectivos.
+\end_layout
+
+\begin_layout Itemize
+Cómo: Es una página web capaz de realizar funciones específicas de acuerdo
+ a sus roles, stakeholders.
+\end_layout
+
+\begin_layout Itemize
+Dónde: 
+\begin_inset CommandInset href
+LatexCommand href
+target "informatica.utem.cl/academicos"
+
+\end_inset
+
+(Ideal).
+\end_layout
+
+\begin_layout Itemize
+Por qué: Porque en la actualidad, no existe una herramienta, digital capaz
+ de realizarlo de forma automática.
+\end_layout
+
+\begin_layout Itemize
+Cuándo: Proyecto a realizarse durante el 1° semestre para el año 2013 de
+ Ingeniería en Software.
+\end_layout
+
+\begin_layout Itemize
+Quién: Este proyecto beneficiaria a Rector, Vicerrector Academico, etc.
+\end_layout
+
+\begin_layout Section
+Historias de usuario.
+\end_layout
+
+\begin_layout Subsection
+Número: 1
+\end_layout
+
+\begin_layout Itemize
+Historia: Asignación de permisos.
+\end_layout
+
+\begin_layout Itemize
+Usuario: Director de Departamento.
+\end_layout
+
+\begin_layout Itemize
+Prioridad: Urgente.
+\end_layout
+
+\begin_layout Itemize
+Descripción: Yo como Director de Departamento quiero que, existan permisos
+ de escritura y/o lectura, y dependiendo de éstos pueda accederse a la informaci
+ón.
+ 
+\end_layout
+
+\begin_layout Itemize
+Observaciones:
+\end_layout
+
+\begin_layout Subsection
+Numero: 2
+\end_layout
+
+\begin_layout Itemize
+Historia: Permisos.
+\end_layout
+
+\begin_layout Itemize
+Usuario: Director de Departamento.
+\end_layout
+
+\begin_layout Itemize
+Prioridad: Urgente.
+\end_layout
+
+\begin_layout Itemize
+Descripción: Yo como Director de Departamento quiero que, Vicerrector Académico
+ y Decano sean capaces de acceder a la información, filtrarla y obtener
+ datos estaditíscos de ésta.
+\end_layout
+
+\begin_layout Itemize
+Observaciones: 
+\end_layout
+
+\begin_layout Subsection
+Numero: 3
+\end_layout
+
+\begin_layout Itemize
+Historia: Modificar.
+\end_layout
+
+\begin_layout Itemize
+Usuario: Director de Departamento.
+\end_layout
+
+\begin_layout Itemize
+Prioridad: Alta.
+\end_layout
+
+\begin_layout Itemize
+Descripción: Yo como Director de Departamento quiero que, la información
+ sea capaz de ser modificada por el Director de Departamento y la Secretaria
+ de Departamento.
+\end_layout
+
+\begin_layout Itemize
+Observaciones:¿Cómo controlamos lo que la(s) secretaria(s) modifica(n)?
+\end_layout
+
+\begin_layout Subsection
+Numero: 4
+\end_layout
+
+\begin_layout Itemize
+Historia: Qué mostrar.
+\end_layout
+
+\begin_layout Itemize
+Usuario: Director de Departamento.
+\end_layout
+
+\begin_layout Itemize
+Prioridad: Alta.
+\end_layout
+
+\begin_layout Itemize
+Descripción: Yo como Director de Departamento quiero que, la información
+ se muestre con los mismos datos que el archivo adjuntado en el correo enviado
+ a Guillermo Rojas el 9 de mayo a las 9:49 del 2013, asumiendo los permisos
+ de acceso.
+\end_layout
+
+\begin_layout Itemize
+Observaciones:
+\end_layout
+
+\begin_layout Subsection
+Número: 5
+\end_layout
+
+\begin_layout Itemize
+Historia: Permisos de cada rol.
+\end_layout
+
+\begin_layout Itemize
+Usuario: Anónimo.
+\end_layout
+
+\begin_layout Itemize
+Prioridad: Media.
+\end_layout
+
+\begin_layout Itemize
+Descripción: Yo como Director de Departamento quiero que, un usuario como
+ rol de anónimo, es decir cualquier ser humano, que visite la página y no
+ se haya logueado, pueda ver la cantidad minima de información.
+ Es decir, permisos sólo de lectura y accediendo sólo a poder ver información
+ no sensible ni personal.
+\end_layout
+
+\begin_layout Itemize
+Observaciones:
+\end_layout
+
+\begin_layout Subsection
+Número: 6
+\end_layout
+
+\begin_layout Itemize
+Historia: Permisos de cada rol.
+\end_layout
+
+\begin_layout Itemize
+Usuario: Vicerrector Académico.
+\end_layout
+
+\begin_layout Itemize
+Prioridad: Media.
+\end_layout
+
+\begin_layout Itemize
+Descripción: Yo como Director de Departamento quiero que, el vicerrector
+ pueda crear, modificar, borrar, y leer, a todos los académicos de todas
+ las escuelas.
+ 
+\end_layout
+
+\begin_layout Itemize
+Observaciones:
+\end_layout
+
+\begin_layout Subsection
+Número: 7
+\end_layout
+
+\begin_layout Itemize
+Historia: Permisos de cada rol.
+\end_layout
+
+\begin_layout Itemize
+Usuario: Director de departamento.
+\end_layout
+
+\begin_layout Itemize
+Prioridad: Media.
+\end_layout
+
+\begin_layout Itemize
+Descripción: Yo como Director de Departamento quiero que, el director de
+ departamento y su secretaria pueda crear, modificar, borrar, y leer, a
+ todos los académicos pero únicamente de su escuela asociada.
+ 
+\end_layout
+
+\begin_layout Itemize
+Observaciones:
+\end_layout
+
+\begin_layout Subsection
+Número: 8
+\end_layout
+
+\begin_layout Itemize
+Historia: Estadísticas
+\end_layout
+
+\begin_layout Itemize
+Usuario: Vicerrector Académico.
+\end_layout
+
+\begin_layout Itemize
+Prioridad: Media-Alta.
+\end_layout
+
+\begin_layout Itemize
+Descripción: Yo como Director de Departamente quiero que el Vicerrector
+ Académico pueda acceder a estadísticas de las escuelas, tales como cantidad
+ de académicos, por facultad, por departamentos y la universidad completa
+ Así mismo, ver por departamento poder ver cantidad de mujeres vs hombres,
+ por jerarquía (Titular, asociado, asistente, instructor) Por Grado (Escala
+ Unica de Sueldos) Por títulos Por Grados Por especialidad.
+\end_layout
+
+\begin_layout Itemize
+Observaciones: Con el tiempo mientras se desarrolle, en un scrum se puede
+ hilar más fino.
+\end_layout
+
+\begin_layout Subsection
+Número: 9
+\end_layout
+
+\begin_layout Itemize
+Historia: Vistas de la capa más alta.
+\end_layout
+
+\begin_layout Itemize
+Usuario: Anónimo.
+\end_layout
+
+\begin_layout Itemize
+Prioridad: Media-Alta.
+\end_layout
+
+\begin_layout Itemize
+Descripción: Yo como Director de Departamente quiero, independiente de su
+ rol que visite la página web, podrá ver datos personales (algunos opcionales,
+ ejemplo dirección, foto), datos académicos y datos profesionales.
+\end_layout
+
+\begin_layout Itemize
+Observaciones: Con el tiempo mientras se desarrolle, en un scrum se puede
+ hilar más fino.
+\end_layout
+
+\end_body
+\end_document
