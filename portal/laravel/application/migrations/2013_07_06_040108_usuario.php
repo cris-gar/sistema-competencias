@@ -17,8 +17,8 @@ class Usuario {
 			$tabla->text('apellido_materno',255);
 			$tabla->text('fecha_nacimiento',255);
 			$tabla->text('nacionalidad',255);
-			$tabla->string('correo',255)->unique();
-			$tabla->string('comentario',255)->nullable();
+			$tabla->string('correo',255);
+			$tabla->string('comentario',255);
 		});
 
 	}
