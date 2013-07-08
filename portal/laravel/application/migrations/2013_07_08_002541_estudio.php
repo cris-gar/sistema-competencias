@@ -11,12 +11,12 @@ class Estudio {
 	{
 		// código para crear la tabla estudio
 		Schema::create('estudio', function ($tabla){
-			$tabla->increments('id');
-			$tabla->text('nombre');
-			$tabla->string('descripcion', 255); 
+			$tabla->increments('id_estudio');
+			$tabla->text('nombre'); // Nombre del estudio, obvio
+			$tabla->string('descripcion', 255); // Describa brevemente qué hizo
 			$tabla->date('fecha_inicio');
-			$tabla->boolean('situacion'); // falso como incompleto
-			$tabla->string('ubicacion');
+			$tabla->boolean('situacion'); // falso como cursando
+			$tabla->string('ubicacion'); // Dónde lo hizo
 		});
 	}
 
