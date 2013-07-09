@@ -12,6 +12,7 @@ class Usuario {
 		//
 		Schema::create('usuario', function ($tabla){
 			$tabla->increments('id');
+			$tabla->string('rut',225);
 			$tabla->text('nombre',255);
 			$tabla->text('apellido_paterno',255);
 			$tabla->text('apellido_materno',255);
