@@ -11,23 +11,28 @@ class Usuario {
 	{
 		//
 		Schema::create('usuario', function ($tabla){
-			$tabla->increments('id_usuario'); // Su rut
-			$tabla->text('nombre',255);
-			$tabla->text('apellido_paterno',255);
-			$tabla->text('apellido_materno',255);
-			$tabla->text('fecha_nacimiento',255);
-			$tabla->text('nacionalidad',255);
-			$tabla->string('correo',255)->unique();
-			$tabla->integer('fono');
-			$tabla->integer('fax')->nullable();
-			$tabla->text('jerarquia_academica',255);
-			$tabla->text('función',255);
-			$tabla->text('jornada',255);
-			$tabla->text('region',255)->nullable();
-			$tabla->text('ciudad',255)->nullable();
-			$tabla->text('direccion_particular',255);
-			$tabla->string('comentario',255)->nullable();
-			$tabla->boolean('activo'); //si está actualmente contratado o no
+			$tabla->increments('id_usuario')->onDelete('cascade'); // Su rut
+			$tabla->text('nombre',255)->onDelete('cascade');
+			$tabla->text('apellido_paterno',255)->onDelete('cascade');
+			$tabla->text('apellido_materno',255)->onDelete('cascade');
+			$tabla->date('fecha_nacimiento',255)->onDelete('cascade');
+			$tabla->text('nacionalidad',255)->onDelete('cascade');
+			$tabla->string('correo',255)->unique()->onDelete('cascade');
+			$tabla->integer('fono')->onDelete('cascade');
+			$tabla->integer('fax')->nullable()->onDelete('cascade');
+			$tabla->text('jerarquia_academica',255)->onDelete('cascade');
+			$tabla->text('funcion',255)->onDelete('cascade');
+			$tabla->text('jornada',255)->onDelete('cascade');
+			$tabla->text('region',255)->nullable()->onDelete('cascade');
+			$tabla->text('ciudad',255)->nullable()->onDelete('cascade');
+			$tabla->text('direccion_particular',255)->onDelete('cascade');
+			$tabla->string('formacion_academica')->nullable()->onDelete('cascade');
+			$tabla->string('trabajo_actual')->nullable()->onDelete('cascade');
+			$tabla->string('cargos_académicos')->nullable()->onDelete('cascade');
+			$tabla->string('cargos_empresas')->nullable()->onDelete('cascade');
+			$tabla->string('participación_proyectos_ac_em')->nullable()->onDelete('cascade');
+			$tabla->string('lineas_desarrollo')->nullable()->onDelete('cascade'); /*Comentarios por el mismo académico*/
+			$tabla->boolean('activo')->onDelete('cascade'); //si está actualmente contratado o no
 		});
 
 	}
