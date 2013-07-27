@@ -135,10 +135,10 @@ color de la cadena de texto en el enlace seclecionado
 	color:#fff
 }
 .main-bg {
-	background:url(../image/body_bg.png) repeat 0 0
+	/*background:url(../image/body_bg.png) repeat 0 0*/
 }
 .main-wrap {
-	background:url(../image/body_bg2.png) repeat-x;
+	/*background:url(../image/body_bg2.png) repeat-x;*/
 	padding-bottom:20px;
 }
 .mod-con {
