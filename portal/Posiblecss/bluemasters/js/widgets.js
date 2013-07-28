@@ -1,17 +1,16 @@
 //widget con la informacion minima visible de un profesor
-var Profesor_widget = function(json_data) {
+var Profesor_widget = function(data) {
 	/*
 	 * json_data diccionario con la informacion basica del profesor return:
 	 * widget con la informacion basica
 	 */
-
 	this.template = "<div class=@resume>"
 			+ "<img class = @img_perfil src=img_url><div class=@data><h3>name</h3><h4>depto</h4></div>"
 			+ "</div>";
 
-	this.name = json_data.name;
-	this.depto = json_data.depto;
-	this.img_url = json_data.img_url;
+	this.name = data.name;
+	this.depto = data.depto;
+	this.img_url = data.img_url;
 
 	/* agregar los datos a la plantilla */
 	this.template = this.template.replace("name", this.name);
@@ -22,14 +21,14 @@ var Profesor_widget = function(json_data) {
 	this.template = this.template.replace("@resume", "resume")
 	this.template = this.template.replace("@img_perfil", "img_perfil")
 	this.template = this.template.replace("@data", "data")
-	
-	/*metodos de la clase*/
-		
-	/*escribir el contenido del widget*/
+
+	/* metodos de la clase */
+
+	/* escribir el contenido del widget */
 	function write() {
 		document.write(this.template);
 	}
-	
+
 }
 
 $(function() {
