@@ -17,6 +17,7 @@ class Estudio {
 			$tabla->date('fecha_inicio')->onDelete('cascade'); //
 			$tabla->boolean('situacion')->onDelete('cascade'); // falso como cursando
 			$tabla->string('ubicacion')->onDelete('cascade'); // Dónde lo hizo
+			//$table->foreign('id_usuario')->references('id')->on('usuario');
 		});
 	}
 
