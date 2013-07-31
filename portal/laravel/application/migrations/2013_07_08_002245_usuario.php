@@ -11,7 +11,7 @@ class Usuario {
 	{
 		//
 		Schema::create('usuario', function ($tabla){
-			$tabla->increments('id_usuario')->onDelete('cascade'); // Su rut
+			$tabla->primary('id_rut')->onDelete('cascade'); // Su rut
 			$tabla->text('nombre',255)->onDelete('cascade');
 			$tabla->text('apellido_paterno',255)->onDelete('cascade');
 			$tabla->text('apellido_materno',255)->onDelete('cascade');
@@ -19,7 +19,6 @@ class Usuario {
 			$tabla->text('nacionalidad',255)->onDelete('cascade');
 			$tabla->string('correo',255)->unique()->onDelete('cascade');
 			$tabla->integer('fono')->onDelete('cascade');
-			$tabla->integer('fax')->nullable()->onDelete('cascade');
 			$tabla->text('jerarquia_academica',255)->onDelete('cascade');
 			$tabla->text('funcion',255)->onDelete('cascade');
 			$tabla->text('jornada',255)->onDelete('cascade');
