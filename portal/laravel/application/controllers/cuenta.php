@@ -41,7 +41,7 @@ class Cuenta_Controller extends Base_Controller {
         echo URL::to_route('login', array(5, 7));
     }
     public function action_pruebabd(){
-        $usuarios = DB::table('usuarios')->where('usuario', '=', 'dayle')->get();
+        $usuarios = DB::table('usuario')->get();
 
     }
 
