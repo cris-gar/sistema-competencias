@@ -37,12 +37,10 @@ class Cuenta_Controller extends Base_Controller {
          URL::to('cuenta/login');
     }
 
-    public function action_perro() {
-        echo URL::to_route('login', array(5, 7));
-    }
     public function action_pruebabd(){
-        $usuarios = DB::table('usuario')->get();
 
+        $consulta = DB::table('usuario')->get();
+                return View::make('cuenta.pruebabd')->with('consulta',$consulta);
     }
 
 }
