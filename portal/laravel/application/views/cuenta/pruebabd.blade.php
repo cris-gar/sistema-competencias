@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="es-ES">
     <head>
@@ -33,3 +34,20 @@
         </div> 
     </body>
 </html>
+
+<?
+/*
+$usuarios = DB::table('usuario')->join('estudio','usuario.id_usuario','=','estudio.id_user')->select('usuario.nombre', 'usuario.id_usuario', 'estudio.descripcion')->get();
+
+
+foreach ($usuarios as $usuario )
+{?>
+    {{ $usuario->nombre }}
+ <?
+}
+foreach ($usuarios as $usuario )
+{?>
+    {{ $usuario->id_usuario }} 
+<?
+}*/
+?>
