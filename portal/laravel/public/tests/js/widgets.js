@@ -34,4 +34,19 @@ $(function() {
 });
 
 /*al cargar la pagina*/
+$(document).ready(function() {
+	/*cargar cartas de presentacion profesores*/
+	//profesores json = ajax_rand_profesores();
+	/*mostrar cada uno de los profesores en distintos tiempos de latencia*/
+	$(".resume").mouseover(function() {
+		$(".resume").animate({
+			width : "40%"
+		});
+	})
 
+	$(".resume").mouseout(function() {
+		$(".resume").animate({
+			width : "30%"
+		});
+	})
+});
