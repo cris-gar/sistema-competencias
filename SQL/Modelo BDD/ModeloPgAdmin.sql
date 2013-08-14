@@ -7,9 +7,11 @@ CREATE TABLE usuarios (
     nombre varchar(100) NOT NULL,
     permiso boolean DEFAULT false,
     email varchar(150),
-    fecha_nacimiento date,
+    telefono int(20),
+    genero varchar(1),
     nacionalidad varchar(50),
     estado_civil varchar(50),
+    fecha_nacimiento date,
     fecha_actualizacion timestamp with time zone DEFAULT now() NOT NULL,
     
     UNIQUE (rut),
