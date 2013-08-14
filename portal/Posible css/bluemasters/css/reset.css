@@ -30,6 +30,7 @@ ul, ol {
 	list-style:none
 }
 li {
+	border-radius: 15px 15px 15px 15px;
 	list-style-type:none
 }
 em, i {
