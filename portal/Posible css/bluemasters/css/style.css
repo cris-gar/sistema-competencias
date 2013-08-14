@@ -119,6 +119,7 @@ color de la cadena de texto en el enlace seclecionado
 }
 #main-menu li a.cur strong {
 	background-position:right 0;
+	color: #fff;
 }
 #main-menu li a:hover {
 	text-decoration:none;
@@ -673,7 +674,7 @@ color de la cadena de texto en el enlace seclecionado
 	font-weight:bold;
 	display:block;
 	margin-bottom:4px;
-	color: #000
+	color: #000;
 }
 #contact-form li .input-wrap {
 	display:block;
