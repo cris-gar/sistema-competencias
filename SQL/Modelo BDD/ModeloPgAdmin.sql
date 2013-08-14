@@ -6,6 +6,7 @@ CREATE TABLE usuarios (
     rut int NOT NULL,
     nombre varchar(100) NOT NULL,
     permiso boolean DEFAULT false,
+    email varchar(150),
     fecha_nacimiento date,
     nacionalidad varchar(50),
     estado_civil varchar(50),
@@ -25,29 +26,6 @@ CREATE TABLE accesos (
     PRIMARY KEY (pk)
 );
 
-DROP TABLE IF EXISTS asignaturas CASCADE;
-CREATE TABLE asignaturas (
-    pk bigserial NOT NULL,
-    usuario_fk int NOT NULL REFERENCES usuarios(pk) ON UPDATE CASCADE ON DELETE CASCADE,
-    codigo varchar(10) NOT NULL,
-    nombre varchar(100),
-    fecha_actualizacion timestamp with time zone DEFAULT now() NOT NULL,
-
-    UNIQUE (codigo),
-    PRIMARY KEY (pk)
-);
-
-DROP TABLE IF EXISTS departamentos CASCADE;
-CREATE TABLE departamentos (
-    pk bigserial NOT NULL,
-    usuario_fk int NOT NULL REFERENCES usuarios(pk) ON UPDATE CASCADE ON DELETE CASCADE,
-    nombre varchar(100) NOT NULL,
-    jefe_departamento varchar(100) NOT NULL,
-    facultad varchar(100) NOT NULL,
-    fecha_actualizacion timestamp with time zone DEFAULT now() NOT NULL,
-
-    PRIMARY KEY (pk)
-);
 
 DROP TABLE IF EXISTS estudios CASCADE;
 CREATE TABLE estudios (
@@ -62,8 +40,6 @@ CREATE TABLE estudios (
 
     PRIMARY KEY (pk)
 );
-
-
 
 
 COMMIT;
