@@ -1,15 +1,3 @@
-/* 
- * Project: BlueMasters
- * PSD Designed by: Smashing Magazine
- * URL:http://www.smashingmagazine.com/2010/06/22/free-portfolio-psd-template-bluemasters/
- *
- * XHTML/CSS Coded By: XhtmlWeaver
- * URL: http://www.xhtmlweaver.com
- * Email: info@xhtmlweaver.com
- *
- * Feel free to use, redistribute!
- * - XhtmlWeaver, You Design, We code!
- * */
 @import 'reset.css';
 body {
 	font:400 12px/1.5 Verdana, Arial, Helvetica, sans-serif;
@@ -103,7 +91,7 @@ body {
 }
 #main-menu li a.cur, #main-menu li a.cur strong {
 	border-radius: 15px 15px 15px 15px;
-	/*resalto para menu selecionado*/
+	/*resalto para menú selecionado*/
 	background:url(../image/menu_bg.png) no-repeat
 }
 #main-menu li a {
@@ -194,7 +182,7 @@ color de la cadena de texto en el enlace seclecionado
 }
 #main .container {
 	margin:0 20px;
-	background:#fff
+	border-radius:15px 15px 15px 15px;
 }
 /*Homepage style*/
 
@@ -288,6 +276,7 @@ color de la cadena de texto en el enlace seclecionado
 	width:599px;
 	float:left;
 	padding:11px 22px;
+	border-radius: 15px 15px 15px 15px;
 }
 #sub-page .main-con .title-nav {
 	height:35px;
@@ -306,12 +295,15 @@ color de la cadena de texto en el enlace seclecionado
 #sub-page .sidebar {
 	width:267px;
 	float:right;
-	background:#eef0f5
+	background:#eef0f5;
+	border-radius: 15px 15px 15px 15px;
 }
 #sub-page .sidebar .title-nav {
 	height:48px;
 	line-height:48px;
-	background:#9097a9
+	background:#9097a9;
+	border-radius: 15px 15px 15px 15px;
+
 }
 #sub-page .sidebar .title-nav h2 {
 	font-size:20px;
@@ -322,6 +314,7 @@ color de la cadena de texto en el enlace seclecionado
 	color:#444d68;
 }
 #sub-page #get-touch .title-nav h2 {
+	border-radius: 15px 15px 15px 15px;
 	background-position:0 -419px
 }
 #sub-page #get-touch .con {
@@ -369,7 +362,8 @@ color de la cadena de texto en el enlace seclecionado
 	line-height:41px;
 	text-indent:20px;
 	background:#dce0e9 url(../image/nav_link_bg.png) no-repeat 95% 0;
-	color:#747c93
+	color:#747c93;
+	border-radius: 15px 15px 15px 15px;
 }
 #site-navigation li a:hover {
 	background:#d0d4de url(../image/nav_link_bg.png) no-repeat 95% -41px;
@@ -679,6 +673,7 @@ color de la cadena de texto en el enlace seclecionado
 	font-weight:bold;
 	display:block;
 	margin-bottom:4px;
+	color: #000
 }
 #contact-form li .input-wrap {
 	display:block;
@@ -716,7 +711,8 @@ color de la cadena de texto en el enlace seclecionado
 	border:0;
 	font-weight:bold;
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:11px
+	font-size:11px;
+	border-radius: 15px 15px 15px 15px;
 }
 /*SiteInfo style*/
 
