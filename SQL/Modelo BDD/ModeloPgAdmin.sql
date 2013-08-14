@@ -7,7 +7,7 @@ CREATE TABLE usuarios (
     nombre varchar(100) NOT NULL,
     permiso boolean DEFAULT false,
     email varchar(150),
-    telefono int(20),
+    telefono int,
     genero varchar(1),
     nacionalidad varchar(50),
     estado_civil varchar(50),
