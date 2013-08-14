@@ -30,7 +30,7 @@ CREATE TABLE asignaturas (
     pk bigserial NOT NULL,
     usuario_fk int NOT NULL REFERENCES usuarios(pk) ON UPDATE CASCADE ON DELETE CASCADE,
     codigo varchar(10) NOT NULL,
-    nombre varchar(100)
+    nombre varchar(100),
     fecha_actualizacion timestamp with time zone DEFAULT now() NOT NULL,
 
     UNIQUE (codigo),
